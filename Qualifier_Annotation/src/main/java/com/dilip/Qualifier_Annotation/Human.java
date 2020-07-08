@@ -32,9 +32,13 @@ public class Human {
 			System.out.println("Dead..");
 			
 			
+			
+			
 		}
 		else {
 			heart.pump();
+			System.out.println("Name of Animal=" + heart.getNameOfAnimalString());
+			System.out.println("Name of Animal=" + heart.getNoOfHeart());
 		}
 	}
 	

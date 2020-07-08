@@ -45,8 +45,18 @@
     
     
  
-   <bean  id="humanHeart" class="com.dilip.Qualifier_Annotation.Heart"></bean>
-   <bean  id="octopusHeart" class="com.dilip.Qualifier_Annotation.Heart"></bean>
+   <bean  id="humanHeart" class="com.dilip.Qualifier_Annotation.Heart">
+   
+     <property name="nameOfAnimalString" value="human"></property>
+     <property name="noOfHeart" value="1"></property>
+   
+   </bean>
+   <bean  id="octopusHeart" class="com.dilip.Qualifier_Annotation.Heart">
+   
+   <property name="nameOfAnimalString" value="octopus"></property>
+   <property name="noOfHeart" value="3"></property>
+   
+   </bean>
    
    
    
