@@ -1,6 +1,7 @@
-package com.dilip.Autowiring;
+package com.dilip.Qualifier_Annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Human {
 
@@ -10,12 +11,14 @@ public class Human {
 	    System.out.println("Default Constructor called");
 	}
 
-    @Autowired       // to make annotation on , use context:annotation-config in beans.xml
-	public Human(Heart heart) {           //this is used when autowire is done via constructor
+   
+	
+    public Human(Heart heart) {           //this is used when autowire is done via constructor
 		this.heart = heart;
 	}
-
-	//@Autowired  can be written here also,but at one place only
+    
+    @Autowired
+    @Qualifier("humanHeart")
 	public void setHeart(Heart heart) {      //this is used when autowire is done via byName , byType
 		this.heart = heart;
 	    System.out.println("Heart Constructor called");

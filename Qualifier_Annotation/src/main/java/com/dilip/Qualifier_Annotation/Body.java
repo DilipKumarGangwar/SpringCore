@@ -1,4 +1,4 @@
-package com.dilip.Autowiring;
+package com.dilip.Qualifier_Annotation;
 
 import java.util.Arrays;
 

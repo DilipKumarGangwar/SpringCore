@@ -37,8 +37,17 @@
    </bean>  
    -->
    
+    <!-- To use the Spring  annotation -->
     
+    <context:annotation-config></context:annotation-config>         <!-- or <context:annotation-config/> -->
+    
+    
+    
+    
+ 
    <bean  id="heartobj" class="com.dilip.Autowiring.Heart"></bean>
+   
+   
    
    <bean id="human" class="com.dilip.Autowiring.Human" >
 

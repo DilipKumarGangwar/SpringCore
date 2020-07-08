@@ -45,11 +45,12 @@
     
     
  
-   <bean  id="heartobj" class="com.dilip.Autowiring.Heart"></bean>
+   <bean  id="humanHeart" class="com.dilip.Qualifier_Annotation.Heart"></bean>
+   <bean  id="octopusHeart" class="com.dilip.Qualifier_Annotation.Heart"></bean>
    
    
    
-   <bean id="human" class="com.dilip.Autowiring.Human" >
+   <bean id="human" class="com.dilip.Qualifier_Annotation.Human" >
 
    </bean>  
    
