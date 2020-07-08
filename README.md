@@ -1,1 +1,1 @@
-"# SpringCore" 
+# SpringCore
