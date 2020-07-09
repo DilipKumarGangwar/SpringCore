@@ -5,21 +5,24 @@ import org.springframework.beans.factory.annotation.Value;
 
 public class Student {
 	
+	@Value("${stu.rollno}")  // //fetching values from properties file ,here it also means that @Required is present by default
 	int rollno;
 	String name;
 	String course;
 	String hobby;
 	
-
+    
 	public int getRollno() {
 		return rollno;
 	}
 	
-	@Required
-	@Value("3")
+	
+	  
 	public void setRollno(int rollno) {
 		this.rollno = rollno;
+		System.out.println("Roll no initialised");
 	}
+	
 	
 	
 	public String getName() {
@@ -27,7 +30,7 @@ public class Student {
 	}
 	
 	@Required
-	@Value("Ashu")
+	@Value("${stu.name}") 
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -36,7 +39,7 @@ public class Student {
 	}
 	
 	@Required
-	@Value("course")
+	@Value("${stu.course}")
 	public void setCourse(String course) {
 		this.course = course;
 	}
